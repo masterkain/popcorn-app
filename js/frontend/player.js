@@ -166,7 +166,7 @@ window.spawnVideoPlayer = function (url, subs, movieModel) {
     });
 
     // Init video.
-    var video = window.videoPlaying = videojs('video_player', { plugins: { biggerSubtitle : {}, smallerSubtitle : {}, customSubtitles: {} }});
+    var video = window.videoPlaying = videojs('video_player', { plugins: { biggerSubtitle : {}, smallerSubtitle : {}, customSubtitles: {}, progressTips: {} }});
 
     // Enter full-screen
     $('.vjs-fullscreen-control').on('click', function () {
