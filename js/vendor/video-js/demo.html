@@ -21,8 +21,10 @@
       poster="http://video-js.zencoder.com/oceans-clip.png"
       data-setup="{}">
     <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-    <track kind="subtitles" src="demo.captions.vtt" />
-
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
   </video>
 
 </body>
