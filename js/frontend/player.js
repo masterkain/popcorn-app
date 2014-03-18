@@ -134,7 +134,7 @@ window.spawnVideoPlayer = function (url, subs, movieModel) {
         });
     }
     subArray.sort(function (sub1, sub2) {
-        return sub1.language > sub2.language;
+        return sub1.languageName > sub2.languageName;
     });
 
     var subtracks = '';
@@ -166,7 +166,7 @@ window.spawnVideoPlayer = function (url, subs, movieModel) {
     });
 
     // Init video.
-    var video = window.videoPlaying = videojs('video_player', { plugins: { biggerSubtitle : {}, smallerSubtitle : {}, customSubtitles: {} }});
+    var video = window.videoPlaying = videojs('video_player', { plugins: { biggerSubtitle : {}, smallerSubtitle : {}, customSubtitles: {}, progressTips: {} }});
 
     // Enter full-screen
     $('.vjs-fullscreen-control').on('click', function () {

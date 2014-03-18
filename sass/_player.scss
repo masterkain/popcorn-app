@@ -21,40 +21,24 @@
   -webkit-app-region: no-drag;
 }
 
-.vjs-default-skin .vjs_smallersub_button.vjs-control {
-  float: right;
-  line-height: 1.6em;
-  font-size: 0.8em;
-  top: 5px;
-}
-
-.vjs-default-skin .vjs_biggersub_button.vjs-control {
-  float: right;
-  line-height: 1.6em;
-  font-size: 0.7em;
-  top: 6px;
-}
-
-.vjs-default-skin .vjs_biggersub_button.vjs-control:before {
+.vjs-default-skin .vjs-biggersub-button.vjs-menu-button.vjs-control:before,
+.vjs-default-skin .vjs-smallersub-button.vjs-menu-button.vjs-control:before {
   font-family: FontAwesome;
-  content: "\f031";
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #666;
-  font-size: 2em;
-  vertical-align: inherit;
+  content: "\f034";
+  font-size: 1.8em;
+  top: -0.15em;
+}
+.vjs-default-skin .vjs-smallersub-button.vjs-menu-button.vjs-control:before {
+  font-size: 1.2em;
+  top: 0.3em;
 }
 
-.vjs-default-skin .vjs_smallersub_button.vjs-control:before {
-  font-family: FontAwesome;
-  content: "\f031";
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #666;
-  font-size: 1.3em;
-  line-height: 2.4em;
+.vjs-default-skin .vjs-menu-button .vjs-menu .vjs-menu-content {
+  max-height: none ! important;
+}
+
+.vjs-menu .vjs-menu-content li.vjs-menu-item {
+  text-transform: capitalize;
 }
 
 // Shows the close button when the video controls are active
@@ -89,11 +73,6 @@
     text-shadow: $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline, $subtitle-outline;
   }
 
-  .vjs-menu-item.vjs-selected {
-    font-weight: bold;
-    color: $popcorn-blue;
-  }
-
   .vjs-text-track-display { 
     font-size: 1em; 
     pointer-events: none;
@@ -101,7 +80,6 @@
   .vjs-loading-spinner { font-size: 1em; }
   .vjs-big-play-button { font-size: 1em; }
   .vjs-control-bar { font-size: 10px; }
-  .vjs-menu-item { color: #000; }
   .vjs-seek-handle { display: none; }
 }
 

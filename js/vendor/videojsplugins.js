@@ -17,7 +17,7 @@ videojs.BiggerSubtitleButton.prototype.onClick = function() {
 
 var createBiggerSubtitleButton = function() {
   var props = {
-    className: 'vjs_biggersub_button vjs-control',
+    className: 'vjs-biggersub-button vjs-menu-button vjs-control',
     innerHTML: '<div class="vjs-control-content"><span class="vjs-control-text">A+</span></div>',
     role: 'button',
     'aria-live': 'polite', // let the screen reader user know that the text of the button may change
@@ -50,7 +50,7 @@ videojs.SmallerSubtitleButton.prototype.onClick = function() {
 
 var createSmallerSubtitleButton = function() {
   var props = {
-    className: 'vjs_smallersub_button vjs-control',
+    className: 'vjs-smallersub-button vjs-menu-button vjs-control',
     innerHTML: '<div class="vjs-control-content"><span class="vjs-control-text">A-</span></div>',
     role: 'button',
     'aria-live': 'polite', // let the screen reader user know that the text of the button may change
